@@ -9,6 +9,10 @@ django==1.10.2
 factory-boy==2.7.0
 fake-factory==0.7.2       # via factory-boy
 first==2.0.1              # via pip-tools
+flake8==3.0.4
+mccabe==0.5.2             # via flake8
 pip-tools==1.7.0
+pycodestyle==2.0.0        # via flake8
+pyflakes==1.2.3           # via flake8
 python-dateutil==2.5.3    # via fake-factory
 six==1.10.0               # via fake-factory, pip-tools, python-dateutil
