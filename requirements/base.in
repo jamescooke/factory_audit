@@ -1,5 +1,6 @@
 django
-factory_boy
+factory-boy
+factory-djoy
 flake8
 ipdb
 isort
