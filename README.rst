@@ -33,13 +33,13 @@ Definitions
   Each factory is graded based on how its default configuration behaves. The
   gradings are:
 
-  - \:red_circle: RED - Factory creates invalid instances of the model and
+  - \:red_circle: RED - Factory creates **invalid** instances of the model and
     saves them to the database.
 
   - \:yellow_heart: YELLOW - Factory raises a ``ValidationError`` and does not
     save any instances.
 
-  - \:green_heart: GREEN - Factory creates multiple valid instances for the
+  - \:green_heart: GREEN - Factory creates multiple **valid** instances for the
     user with its own strategy.
 
 
