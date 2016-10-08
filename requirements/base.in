@@ -1,4 +1,5 @@
 django
 factory_boy
 flake8
+isort
 pip-tools
