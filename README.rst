@@ -2,7 +2,7 @@ Factory Audit
 =============
 
 Checking how various object factories perform in Django with respect to
-creating valid instances.
+creating valid instances out of the box.
 
 Definitions
 -----------
@@ -33,25 +33,25 @@ Definitions
   Each factory is graded based on how its default configuration behaves. The
   gradings are:
 
-  - RED :red_circle: - Factory creates invalid instances of the model and saves
-    them to the database.
+  - \:red_circle: RED - Factory creates invalid instances of the model and
+    saves them to the database.
 
-  - YELLOW :yellow_heart: - Factory raises a ``ValidationError`` and does not
+  - \:yellow_heart: YELLOW - Factory raises a ``ValidationError`` and does not
     save any instances.
 
-  - GREEN :green_heart: - Factory creates multiple valid instances for the user
-    with its own strategy.
+  - \:green_heart: GREEN - Factory creates multiple valid instances for the
+    user with its own strategy.
 
 
 Results
 -------
 
-============  ======================  ====================
-Factory       ItemFactory             UserFactory
-============  ======================  ====================
-Factory Boy   RED :red_circle:        RED :red_circle:
-Factory Djoy  YELLOW :yellow_heart:   GREEN :green_heart:
-============  ======================  ====================
+================  ======================  ====================
+Library           ItemFactory             UserFactory
+================  ======================  ====================
+**Factory Boy**   \:red_circle: RED       \:red_circle: RED
+**Factory Djoy**  \:yellow_heart: YELLOW  \:green_heart: GREEN
+================  ======================  ====================
 
 
 Contributions
