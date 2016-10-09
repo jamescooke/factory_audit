@@ -24,7 +24,7 @@ class TestItemFactory(TestCase):
                     ItemFactory()
 
         self.assertEqual(Item.objects.count(), expected_num_created - 1)
-        self.assertIn('UNIQUE', str(cm.exception))
+        self.assertIn('unique', str(cm.exception).lower())
 
 
 class TestUserFactory(TestCase):
