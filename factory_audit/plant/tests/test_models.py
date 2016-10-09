@@ -20,12 +20,12 @@ class TestModels(TestCase):
         """
         Item with non-unique name does not pass validation, name collides
         """
-        item = Item(name='box')
+        item = Item(name='B')
         item.full_clean()
         item.save()
 
         with self.assertRaises(ValidationError) as cm:
-            Item(name='box').full_clean()
+            Item(name='B').full_clean()
 
         self.assertEqual(list(cm.exception.error_dict), ['name'])
         self.assertIn('already exists', str(cm.exception))
