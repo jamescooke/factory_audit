@@ -10,10 +10,10 @@ class TestItemFactory(TestCase):
 
     def test_default(self):
         """
-        Hypothesis[django]: Plant.Item: RED (does not reliably create instance)
+        Hypothesis[django]: Plant.Item: RED (does not reliably create instances)
 
         If the factory is called 200 times, the number of created instances is
-        usually less than 200.
+        less than 200.
         """
         result = [ItemFactory() for _ in range(200)]
 
