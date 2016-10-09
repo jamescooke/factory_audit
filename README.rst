@@ -4,6 +4,9 @@ Factory Audit
 Checking how various object factories perform in Django with respect to
 creating valid instances out of the box.
 
+.. image:: https://travis-ci.org/jamescooke/factory_audit.svg?branch=master
+    :target: https://travis-ci.org/jamescooke/factory_audit
+
 Definitions
 -----------
 
