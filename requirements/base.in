@@ -2,6 +2,7 @@ django
 factory-boy
 factory-djoy
 flake8
+hypothesis[django]
 ipdb
 isort
 pip-tools
