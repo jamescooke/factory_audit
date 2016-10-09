@@ -1,9 +1,5 @@
 django
-factory-boy
-factory-djoy
 flake8
-hypothesis[django]
 ipdb
 isort
-model_mommy
 pip-tools

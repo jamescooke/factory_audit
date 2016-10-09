@@ -10,4 +10,4 @@ venv:
 	. venv/bin/activate && pip install -U pip
 
 install:
-	pip install -r requirements/base.txt
+	pip install -r requirements/all.txt

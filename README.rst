@@ -20,6 +20,8 @@ Definitions
 
   - `Hypothesis[django] <https://hypothesis.readthedocs.io/en/latest/django.html>`_
 
+  - `Mixer <https://github.com/klen/mixer>`_
+
   - `Model Mommy <https://github.com/vandersonmota/model_mommy>`_
 
 
@@ -72,6 +74,7 @@ Library                 ItemFactory             UserFactory
 **Factory Boy**         \:red_circle: RED       \:red_circle: RED
 **Factory Djoy**        \:yellow_heart: YELLOW  \:green_heart: GREEN
 **Hypothesis[django]**  \:red_circle: RED       \:red_circle: RED
+**Mixer**               \:green_heart: GREEN    \:green_heart: GREEN
 **Model Mommy**         \:yellow_heart: YELLOW  \:green_heart: GREEN
 ======================  ======================  ====================
 
@@ -83,6 +86,9 @@ each library.
 * `Factory Djoy </factory_audit/plant/tests/test_factory_djoy_factories.py>`_
 
 * `Hypothesis[django] </factory_audit/plant/tests/test_hypothesis_factories.py>`_
+
+* `Mixer </factory_audit/plant/mixer_tests.py>`_ (not in the test folder to
+  hide them from Django's test runner's discovery).
 
 * `Model Mommy </factory_audit/plant/tests/test_model_mommy_factories.py>`_
 

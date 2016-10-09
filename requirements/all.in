@@ -1,0 +1,7 @@
+-r base.in
+
+# Happy factory libs live together :D
+factory-boy
+factory-djoy
+hypothesis[django]
+model_mommy
