@@ -15,6 +15,8 @@ Definitions
 
   - `Factory Djoy <https://github.com/jamescooke/factory_djoy>`_
 
+  - `Hypothesis[django] <https://hypothesis.readthedocs.io/en/latest/django.html>`_
+
 
 * **Models**
 
@@ -46,12 +48,22 @@ Definitions
 Results
 -------
 
-================  ======================  ====================
-Library           ItemFactory             UserFactory
-================  ======================  ====================
-**Factory Boy**   \:red_circle: RED       \:red_circle: RED
-**Factory Djoy**  \:yellow_heart: YELLOW  \:green_heart: GREEN
-================  ======================  ====================
+======================  ======================  ====================
+Library                 ItemFactory             UserFactory
+======================  ======================  ====================
+**Factory Boy**         \:red_circle: RED       \:red_circle: RED
+**Factory Djoy**        \:yellow_heart: YELLOW  \:green_heart: GREEN
+**Hypothesis[django]**  \:red_circle: RED       \:red_circle: RED
+======================  ======================  ====================
+
+For more detailed reasons for each grading see the individual test file for
+each library.
+
+* `Factory Boy </factory_audit/plant/tests/test_factory_boy_factories.py>`_
+
+* `Factory Djoy </factory_audit/plant/tests/test_factory_djoy_factories.py>`_
+
+* `Hypothesis[django] </factory_audit/plant/tests/test_hypothesis_factories.py>`_
 
 
 Contributions
@@ -59,3 +71,6 @@ Contributions
 
 Please add your own factory library and run it through the tests - pull
 requests very welcome.
+
+Please help me write a better wrapper for Hypothesis! I hypothesise that it
+*is* possible!
