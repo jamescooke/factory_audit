@@ -15,8 +15,7 @@ class TestItemFactory(TestCase):
         Model Mommy: Plant.Item: YELLOW (raises IntegrityError)
 
         There is no method used to create unique values so there are collisions
-        when there are a small number of possible values. The "result" item
-        does not pass validation.
+        when there are a small number of possible values.
         """
         with self.assertRaises(IntegrityError) as cm:
             for expected_num_created in range(1, 25):
