@@ -26,7 +26,7 @@ class TestUserFactory(TestCase):
 
     def test_default(self):
         """
-        Factory Djoy; User Model: GREEN (makes a valid instance)
+        Factory Djoy; User Model: GREEN (makes valid instances)
         """
         result = UserFactory.create_batch(10)
 

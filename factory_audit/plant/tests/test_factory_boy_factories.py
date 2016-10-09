@@ -10,7 +10,7 @@ class TestItemFactory(TestCase):
 
     def test_default(self):
         """
-        Factory Boy: Plant.Item: RED (makes invalid instance with no warning)
+        Factory Boy: Plant.Item: RED (makes invalid instance)
 
         Factory Boy default set up has created an instance with no name and
         does not warn the user.
