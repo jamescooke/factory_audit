@@ -9,7 +9,9 @@ class TestItemFactory(TestCase):
     """
     Mixer is hard to work with. The leaking of RuntimeErrors into the console
     even when caught is not helpful. The pinned old version of fake-factory
-    makes it incompatible with other libraries.
+    makes it incompatible with other libraries. It has to have its own test run
+    which installs mixer and runs this test file, initiated by
+    ``./test_mixer.sh``.
     """
 
     def test_default(self):
