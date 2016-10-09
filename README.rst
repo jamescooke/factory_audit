@@ -17,6 +17,8 @@ Definitions
 
   - `Hypothesis[django] <https://hypothesis.readthedocs.io/en/latest/django.html>`_
 
+  - `Model Mommy <https://github.com/vandersonmota/model_mommy>`_
+
 
 * **Models**
 
@@ -49,8 +51,9 @@ Definitions
   - \:red_circle: RED - Factory creates **invalid** instances of the model and
     saves them to the database.
 
-  - \:yellow_heart: YELLOW - Factory raises a ``ValidationError`` and does not
-    save any instances.
+  - \:yellow_heart: YELLOW - Factory raises an exception and does not
+    save any instances. Preferably this would be a ``ValidationError``, but
+    I've also allowed ``IntegrityError`` here.
 
   - \:green_heart: GREEN - Factory creates multiple **valid** instances with no
     invalid instances created or skipped. Running factory ``n`` times generates
@@ -66,6 +69,7 @@ Library                 ItemFactory             UserFactory
 **Factory Boy**         \:red_circle: RED       \:red_circle: RED
 **Factory Djoy**        \:yellow_heart: YELLOW  \:green_heart: GREEN
 **Hypothesis[django]**  \:red_circle: RED       \:red_circle: RED
+**Model Mommy**         \:yellow_heart: YELLOW  \:green_heart: GREEN
 ======================  ======================  ====================
 
 For more detailed reasons for each grading see the individual test file for
@@ -76,6 +80,8 @@ each library.
 * `Factory Djoy </factory_audit/plant/tests/test_factory_djoy_factories.py>`_
 
 * `Hypothesis[django] </factory_audit/plant/tests/test_hypothesis_factories.py>`_
+
+* `Model Mommy </factory_audit/plant/tests/test_model_mommy_factories.py>`_
 
 
 Contributions
