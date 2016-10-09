@@ -32,8 +32,19 @@ Definitions
 
 * **Grading**
 
-  Each factory is graded based on how its default configuration behaves. The
-  gradings are:
+  Each factory is graded based on how its default configuration behaves.
+
+  The gradings are based on the definition of "valid". Valid instances are ones
+  which will pass Django's ``full_clean`` and not raise a ``ValidationError``.
+  For example, using the ``ItemFactory`` a generated item passes validation
+  with:
+
+  .. code-block:: python
+
+      item = ItemFactory()
+      item.full_clean()
+
+  The gradings are:
 
   - \:red_circle: RED - Factory creates **invalid** instances of the model and
     saves them to the database.
@@ -41,8 +52,9 @@ Definitions
   - \:yellow_heart: YELLOW - Factory raises a ``ValidationError`` and does not
     save any instances.
 
-  - \:green_heart: GREEN - Factory creates multiple **valid** instances for the
-    user with its own strategy.
+  - \:green_heart: GREEN - Factory creates multiple **valid** instances with no
+    invalid instances created or skipped. Running factory ``n`` times generates
+    ``n`` valid instances.
 
 
 Results
