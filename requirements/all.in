@@ -1,6 +1,7 @@
 -r base.in
 
 # Happy factory libs live together :D
+django-fakery
 factory-boy
 factory-djoy
 hypothesis[django]
