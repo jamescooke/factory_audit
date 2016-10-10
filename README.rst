@@ -14,6 +14,8 @@ Definitions
 
   The following factory libraries have been explored:
 
+  - `Django Fakery <https://github.com/fcurella/django-fakery>`_
+
   - `Factory Boy <https://github.com/FactoryBoy/factory_boy>`_
 
   - `Factory Djoy <https://github.com/jamescooke/factory_djoy>`_
@@ -68,18 +70,21 @@ Definitions
 Results
 -------
 
-======================  ======================  ====================
+======================  ======================  ======================
 Library                 ItemFactory             UserFactory
-======================  ======================  ====================
+======================  ======================  ======================
+**Django Fakery**       \:red_circle: RED       \:yellow_heart: YELLOW
 **Factory Boy**         \:red_circle: RED       \:red_circle: RED
 **Factory Djoy**        \:yellow_heart: YELLOW  \:green_heart: GREEN
 **Hypothesis[django]**  \:red_circle: RED       \:red_circle: RED
 **Mixer**               \:green_heart: GREEN    \:green_heart: GREEN
 **Model Mommy**         \:yellow_heart: YELLOW  \:green_heart: GREEN
-======================  ======================  ====================
+======================  ======================  ======================
 
 For more detailed reasons for each grading see the individual test file for
 each library.
+
+* `Django Fakery <factory_audit/plant/tests/test_django_fakery_factories.py>`_
 
 * `Factory Boy </factory_audit/plant/tests/test_factory_boy_factories.py>`_
 
