@@ -24,6 +24,8 @@ Definitions
 
   - `Model Mommy <https://github.com/vandersonmota/model_mommy>`_
 
+  Disclosure: Factory Djoy is my factory library. It's a thin wrapper around
+  Factory Boy which does the hard work.
 
 * **Models**
 
