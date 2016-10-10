@@ -13,10 +13,15 @@ class TestItemFactory(TestCase):
         Hypothesis[django]: Plant.Item: RED (does not reliably create instances)
 
         If the factory is called 200 times, the number of created instances is
-        less than 200.
+        less than 200. You usually get around 170 items created and instead
+        items are duplicated in the result list.
         """
         result = [ItemFactory() for _ in range(200)]
 
+        self.assertEqual(len(result), 200)
+        ids = {item.id for item in result}
+        self.assertEqual(len(ids), max(ids))
+        self.assertLess(max(ids), 180)
         self.assertLess(Item.objects.count(), 200)
 
 
