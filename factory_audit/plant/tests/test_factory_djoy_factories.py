@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from django.test import TestCase
 from factory_djoy import UserFactory
 
-from ..factory_djoy_factories import ItemFactory  #, UserFactory
+from ..factory_djoy_factories import ItemFactory
 from ..models import Item
 
 
