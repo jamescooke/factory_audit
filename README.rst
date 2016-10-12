@@ -4,6 +4,9 @@ Factory Audit
 Checking how various object factories perform in Django with respect to
 creating valid instances out of the box.
 
+See the `full write-up (with pretty diagram)
+<http://jamescooke.info/django-factory-audit.html>`_.
+
 .. image:: https://travis-ci.org/jamescooke/factory_audit.svg?branch=master
     :target: https://travis-ci.org/jamescooke/factory_audit
 
@@ -83,21 +86,9 @@ Library                 ItemFactory             UserFactory
 **Model Mommy**         \:yellow_heart: YELLOW  \:green_heart: GREEN
 ======================  ======================  ======================
 
-For more detailed reasons for each grading see the individual test file for
-each library.
-
-* `Django Fakery <factory_audit/plant/tests/test_django_fakery_factories.py>`_
-
-* `Factory Boy </factory_audit/plant/tests/test_factory_boy_factories.py>`_
-
-* `Factory Djoy </factory_audit/plant/tests/test_factory_djoy_factories.py>`_
-
-* `Hypothesis[django] </factory_audit/plant/tests/test_hypothesis_factories.py>`_
-
-* `Mixer </factory_audit/plant/mixer_tests.py>`_ (not in the test folder to
-  hide them from Django's test runner's discovery).
-
-* `Model Mommy </factory_audit/plant/tests/test_model_mommy_factories.py>`_
+For more detailed notes about each factory including some of the grey areas
+around grading please see `Notes about each library in the full write-up
+<http://jamescooke.info/django-factory-audit.html#notes-about-each-library>`_.
 
 
 Contributions
