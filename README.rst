@@ -91,6 +91,21 @@ around grading please see `Notes about each library in the full write-up
 <http://jamescooke.info/django-factory-audit.html#notes-about-each-library>`_.
 
 
+Development
+-----------
+
+To install and run:
+
+.. code-block:: bash
+
+    $ git clone git@github.com:jamescooke/factory_audit.git
+    $ cd factory_audit
+    $ make venv
+    $ . venv/bin/activate
+    $ make install
+    $ cd factory_audit/
+    $ make test
+
 Contributions
 -------------
 
