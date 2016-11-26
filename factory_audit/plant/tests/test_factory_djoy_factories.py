@@ -28,8 +28,8 @@ class TestUserFactory(TestCase):
         """
         Factory Djoy: User Model: GREEN (makes valid instances)
         """
-        result = UserFactory.create_batch(10)
+        result = UserFactory.create_batch(200)
 
-        self.assertEqual(self.user_model.objects.count(), 10)
+        self.assertEqual(self.user_model.objects.count(), 200)
         for user in result:
             self.assertIsNone(user.full_clean())
